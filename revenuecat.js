@@ -50,9 +50,9 @@ if (obj && obj.subscriber) {
     const match = Object.keys(mapping).find(e => ua.includes(e));
     if (match) {
         let [e, s] = mapping[match];
-        s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = nghuyhoang.31) : obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang.31, obj.subscriber.entitlements[e] = locketGold;
+        s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = nghuyhoang31) : obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang31, obj.subscriber.entitlements[e] = locketGold;
     } else {
-        obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang.31;
+        obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang31;
         obj.subscriber.entitlements.pro = locketGold;
     }
 }
