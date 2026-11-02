@@ -55,8 +55,7 @@ if (ua.includes("Locket")) {
                 {
                     title: "tiktok:locketdaubuoi",
                     body: "khung độc quyền kitty",
-                    imageURL: "
-https://raw.githubusercontent.com/nghuyhoang31/nghuyhoang.31-locket/f0caf2e0080bac6e3864e6f28d30004f08c67f24/IMG_4026.jpeg"
+                    imageURL: "https://raw.githubusercontent.com/nghuyhoang31/nghuyhoang.31-locket/f0caf2e0080bac6e3864e6f28d30004f08c67f24/IMG_4026.jpeg"
                 
                 }
             ],
