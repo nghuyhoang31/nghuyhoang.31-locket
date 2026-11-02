@@ -10,7 +10,7 @@ const mapping = {
 
 // ========= NGÀY KÍCH HOẠT GOLD (31/01/2007) ========= //
 var MY_PURCHASE_DATE = "2007-01-31T10:10:14Z"; // Ngày bắt đầu có Gold
-var MY_EXPIRES_DATE  = "3007-01-31T10:10:14Z"; // Ngày hết hạn Gold
+var MY_EXPIRES_DATE  = "9999-01-31T10:10:14Z"; // Ngày hết hạn Gold
 
 // ========= Xử lý dữ liệu ========= //
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
@@ -31,7 +31,7 @@ if (obj && obj.subscriber) {
             "amount": 399000.0,
             "currency": "VND"
         },
-        expires_date: "9999-01-09T10:10:14Z",
+        expires_date: "9999-01-31T10:10:14Z",
         grace_period_expires_date: null,
         refunded_at: null,
         unsubscribe_detected_at: null,
@@ -44,7 +44,7 @@ if (obj && obj.subscriber) {
         grace_period_expires_date: null,
         purchase_date: MY_PURCHASE_DATE,
         product_identifier: "locket_1600_1y",
-        expires_date: "9999-01-09T10:10:14Z"
+        expires_date: "9999-01-31T10:10:14Z"
     };
 
     const match = Object.keys(mapping).find(e => ua.includes(e));
@@ -54,7 +54,7 @@ if (obj && obj.subscriber) {
     } else {
         obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang31;
         obj.subscriber.entitlements.pro = locketGold;
-    }
+    } 
 }
 
 $done({
