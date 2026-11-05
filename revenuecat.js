@@ -13,8 +13,16 @@ var MY_PURCHASE_DATE = "2007-01-31T10:10:14Z"; // Ngày bắt đầu có Gold
 var MY_EXPIRES_DATE  = "9999-01-31T10:10:14Z"; // Ngày hết hạn Gold
 
 // ========= Xử lý dữ liệu ========= //
-var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
-    obj = JSON.parse($response.body);
+var ua = ($request && $request.headers)
+    ? ($request.headers["User-Agent"] || $request.headers["user-agent"] || "")
+    : "";
+
+var obj;
+try {
+    obj = JSON.parse($response.body || "{}");
+} catch (error) {
+    $done({});
+}
 
 if (obj && obj.subscriber) {
     obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
@@ -47,7 +55,7 @@ if (obj && obj.subscriber) {
         expires_date: "9999-01-31T10:10:14Z"
     };
 
-    const match = Object.keys(mapping).find(e => ua.includes(e));
+    const match = Object.keys(mapping).find(e => ua.includes(e) !== -1);
     if (match) {
         let [e, s] = mapping[match];
         s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = nghuyhoang31) : obj.subscriber.subscriptions["locket_1600_1y"] = nghuyhoang31, obj.subscriber.entitlements[e] = locketGold;
