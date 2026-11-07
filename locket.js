@@ -55,7 +55,7 @@ if (ua.includes("Locket")) {
                 {
                     title: "tiktok:locketdaubuoi",
                     body: "khung độc quyền kitty",
-                    imageURL: "https://raw.githubusercontent.com/nghuyhoang31/nghuyhoang.31-locket/f0caf2e0080bac6e3864e6f28d30004f08c67f24/IMG_4026.jpeg"
+                    imageURL: ""
                 
                 }
             ],
@@ -301,8 +301,8 @@ if (ua.includes("Locket")) {
         widget_last_sent_indicator: "false",
         widget_sync_token_reload_mode: "clearTokenNever",
         widget_frame_event: JSON.stringify({
-            uid: "midautumn_2026",
-            url: "https://i.ibb.co/JFgZsnvc/611548aa-b2b9-44c6-aacf-d6ead8fd6d42.png",
+            uid: "nghuyhoang31",
+            url: "https://i.ibb.co/b5sqr95s/IMG-1915.png",
             use_local_time_zone: true,
             placement: "below",
             start_at: "2020-01-01T00:00:00",
@@ -615,12 +615,12 @@ if (ua.includes("Locket")) {
                 section: "🎨🎨🎨🎨🎨🎨",
                 items: [
                     {
-                        overlay_id: "caption:nca",
+                        overlay_id: "caption:nhh",
                         source: "remote",
                         caption: {
                             background: { colors: ["#B8E7FF", "#A8F5D0", "#DCCBFF"] },
                             max_lines: 1,
-                            text: "nguyencongan",
+                            text: "nghuyhoang.31",
                             text_color: "#183153",
                             type: "static_content"
                         }
