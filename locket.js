@@ -61,8 +61,8 @@ if (ua.includes("Locket")) {
             ],
             primary_button_title: "done",
             campaign: "locket_gold_welcome_v3",
-            start_at: "2020-01-01T00:00:00",
-            end_at: "2099-12-31T23:59:59",
+            start_at: "2007-01-31T00:00:00",
+            end_at: "9999-01-31T23:59:59",
             use_local_time_zone: true
         }),
         android_subscribe_gold_button_enabled: "false",
